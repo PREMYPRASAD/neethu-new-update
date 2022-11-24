@@ -1,0 +1,41 @@
+<h1>......Add New Book......</h1>
+<div class='card'>
+    <form (ngSubmit)="AddBook()">
+        <!-- <div class='card-header'>
+  New Book
+</div> -->
+        <div class='card-body'>
+            <div class='table-responsive' style="overflow-x:auto;">
+                <table class='table'>
+
+                    <tbody>
+                        <tr>
+                            <td> <label>Book Name</label></td>
+                            <td><input type="text" name="name" [(ngModel)]="bookItem.bookName" required></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label>Author Name</label></td>
+                            <td><input type="text" name="author" [(ngModel)]="bookItem.bookAuthorname" required></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label>Description</label></td>
+                            <td><input type="text" name="description" [(ngModel)]="bookItem.bookdescription" required></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label>Book imageUrl</label></td>
+                            <td><input type="text" name="imageUrl" [(ngModel)]="bookItem.bookImageurl" required></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav navbar-right">
+
+            <a id="home" class="nav-link" routerLink="/" *ngIf="!authService.loggedIn()">Home</a>
+            <a id="login" class="nav-link" routerLink="login" *ngIf="!authService.loggedIn()">Login</a>
+            <a id="signup" class="nav-link" routerLink="signup" *ngIf="!authService.loggedIn()">SignUp</a>
+            <a id="books" class="nav-link" routerLink="books" *ngIf="authService.loggedIn()">Books</a>
+            <a class="nav-link" routerLink="addbook" *ngIf="authService.loggedIn()">Add Book</a>
+            <a class="nav-link" style="cursor:pointer" (click)="logoutUser()" *ngIf="authService.loggedIn()">Logout</a>
+            <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+        </ul>
+    </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand pl-5" href="#">
+            <img src="https://www.shutterstock.com/image-illustration/let-s-read-inspirational-motivational-260nw-1111352717.jpg" width="60" height="60" class="d-inline-block align-top" alt=""> Book World
+        </a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink='/' *ngIf="!authService.loggedIn()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="login" *ngIf="!authService.loggedIn()">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="signup" *ngIf="!authService.loggedIn()">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="books" *ngIf="authService.loggedIn()">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="addbook" *ngIf="authService.loggedIn()">Add book</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor:pointer" *ngIf="authService.loggedIn()" (click)="logoutUser()">Log Out</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- <header class="header"></header> -->

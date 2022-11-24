@@ -1,0 +1,113 @@
+<!-- <h1>Books List</h1> -->
+<br>
+<!-- <div class='card' style="align-content: center;">
+  
+ <div class='card-body'>            
+     <div class="table-responsive row d-flex justify-content-center"  style="overflow-x:auto;">
+       <table class='table'
+             *ngIf = 'books && books.length'>
+
+             <thead>
+                 <tr>
+                   <th>
+                     <button class='btn btn-primary'
+                     (click)='toggleImage()'>
+                       {{showImage? 'Hide' : 'Show'}} Image
+                     </button>
+                   </th>
+                   <th> Book Name</th>
+                   <th>Author Name</th>
+                   <th>Description</th>
+                
+                 </tr>
+               </thead>
+
+               <tbody>  
+                 <tr *ngFor='let book of books'>
+                     <td><img *ngIf='showImage'
+                       [src] = 'book.imageUrl' 
+                       [title] = 'book.name'
+                       [style.width.px] = 'imageWidth' 
+                       [style.margin.px] = 'imageMargin'></td>
+                     <td>{{ book.name }}</td>
+                     <td>{{book.author }}</td>
+                     <td>{{ book.description }}</td>
+                    
+                     <td>
+                      <button class="btn btn-warning" style="cursor:pointer"   style="margin-left: 20px;" (click)="editBook(book)" > Edit</button>
+                      <button class="btn btn-danger" style="cursor:pointer" (click)="deleteBook(book)" >Delete</button>
+                     </td>
+                 </tr>              
+               </tbody>
+        </table>
+     </div>
+ </div>
+</div>
+         
+
+     -->
+<!--     
+      <div class="container">
+        <div *ngFor='let book of books'>
+        <div class="row">
+          
+      <div class="card" style="width: 18rem;">
+        <img  class="card-img-top"  [src] = 'book.imageUrl'  alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">{{ book.name }}</h2>
+          <h4>{{ book.author }}</h4>
+          <p class="card-text">{{ book.description }}</p>
+          <button class="btn btn-warning" style="cursor:pointer"   style="margin-left: 20px;" (click)="editBook(book)" > Edit</button>
+          <button class="btn btn-danger" style="cursor:pointer" (click)="deleteBook(book)" >Delete</button>
+        </div>
+      </div>
+    </div>
+    </div>
+     </div> -->
+
+<!-- <div class="container h-100"> -->
+
+
+
+
+
+
+
+
+
+<!-- <div *ngFor='let book of books'>
+          
+        <div class="card">
+          <img  class="card-img-top"  [src] = 'book.imageUrl'  alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">{{ book.name }}</h2>
+            <h4>{{ book.author }}</h4>
+            <p class="card-text">{{ book.description }}</p>
+            <button class="btn btn-warning" style="cursor:pointer"   style="margin-left: 20px;" (click)="editBook(book)" > Edit</button>
+            <button class="btn btn-danger" style="cursor:pointer" (click)="deleteBook(book)" >Delete</button>
+          </div>
+        </div>
+      </div> -->
+
+
+<div *ngFor='let book of books' class="container">
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img class="card-img-top" [src]='book.bookImageurl' alt="Card image cap">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{ book.bookName }}</h2>
+                    <br>
+                    <h4>{{ book.bookAuthorname }}</h4>
+                    <br>
+                    <p class="card-text">{{ book.bookdescription }}</p>
+                    <br>
+                    <button class="btn btn-warning" style="cursor:pointer" (click)="editBook(book)"> Edit</button>
+                    <button class="btn btn-danger" style="cursor:pointer" style="margin-left: 20px;" (click)="deleteBook(book)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

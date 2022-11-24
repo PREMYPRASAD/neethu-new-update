@@ -1,0 +1,46 @@
+section{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  
+}
+p
+{
+    color: white;  
+}
+button
+{
+    background: #800506;
+background: -webkit-linear-gradient(top left, #800506, #030301);
+background: -moz-linear-gradient(top left, #800506, #030301);
+background: linear-gradient(to bottom right, #800506, #030301);
+    color:white;
+    border: rgb(70, 7, 7) ;
+}
+button:hover
+{
+    color: white;
+    background-color: black;
+}
+a
+{
+    color:white;
+}
+a:hover
+{
+    color:black;
+}
+.container
+{
+    background: #F8F8FC;
+    background: -webkit-linear-gradient(top left, #4216021b, #0e050098);
+    background: -moz-linear-gradient(top left, #4216021b, #0e05006d);
+    background: linear-gradient(to bottom right, #42160263, #0b0b0a71);
+    border-radius: 16px;
+    width: 800px;
+  
+}

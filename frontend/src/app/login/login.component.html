@@ -1,0 +1,41 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+
+                <div class="login-wrap p-4 p-md-5">
+                    <div class="d-flex">
+                        <div class="w-100">
+                            <h3 class="mb-4"> Login In</h3>
+                        </div>
+                    </div>
+                    <form (ngSubmit)="login()" #loginform="ngForm">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]="user.username" #username="ngModel" required>
+                        </div>
+                        <small for="username" id="feedback1" class="text-danger" [class.invisible]="
+                        username.valid || username.untouched
+                      ">*username is required
+                    </small>
+                        <div class="form-group mb-3">
+                            <input type="password" class="form-control" FormControlName="password" name="password" placeholder="Password" [(ngModel)]="user.upassword" #password="ngModel" [class.is-invalid]="
+                         password.invalid && password.touched" minlength="6" required>
+
+                        </div>
+                        <small for="pwd" id="feedback2" class="text-danger" [class.invisible]="
+                    password.valid || password.untouched
+                  ">*Password should be minimum 6 characters
+                </small>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" name="login" [disabled]="loginform.form.invalid" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
+                        </div>
+                    </form>
+                    <br>
+                    <p class="text-center">Not a member? <a routerLink="/signup">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

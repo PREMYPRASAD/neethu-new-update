@@ -1,0 +1,59 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+
+                <div class="login-wrap p-4 p-md-5">
+                    <div class="d-flex">
+                        <div class="w-100">
+                            <h3 class="mb-4">Sign Up</h3>
+                        </div>
+                    </div>
+                    <form #signupform="ngForm" (ngSubmit)="signup()">
+                        <!-- firstname -->
+                        <div class="form-group mb-3">
+                            <input type="text" [(ngModel)]="user.uFname" class="form-control" placeholder="Firstname" name="firstname" [class.is-invalid]="
+                            firstname.invalid && firstname.touched" #firstname="ngModel" required>
+                        </div>
+                        <small for="fname" id="fnamefeedback" class="text-danger" [class.invisible]="firstname.valid || firstname.untouched">Firstname is required
+                    </small>
+                        <!-- lastname -->
+                        <div class="form-group mb-3">
+                            <input type="text" [(ngModel)]="user.uLname" class="form-control" placeholder="Lastname" name="lastname" #lastname="ngModel" [class.is-invalid]="
+                            lastname.invalid && lastname.touched" required>
+                        </div>
+                        <small for="lname" id="lnamefeedback" class="text-danger" [class.invisible]="lastname.valid || lastname.untouched">Lastname is required
+                    </small>
+                        <!-- username -->
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" [(ngModel)]="user.username" FormControlName="username" placeholder="Username" #username="ngModel" id="username" name="username" [class.is-invalid]="
+                         username.invalid && username.touched" required>
+                        </div>
+                        <small for="uname" id="fnamefeedback" class="text-danger" [class.invisible]="username.valid || username.untouched">Username is required
+                    </small>
+                        <!-- password -->
+                        <div class="form-group mb-3">
+                            <input type="password" class="form-control" [(ngModel)]="user.upassword" FormControlName="password" placeholder="Password" #password="ngModel" id="password" name="password" [class.is-invalid]="
+                        password.invalid && password.touched" minlength="6" required>
+                        </div>
+                        <small for="pwd" id="pwdfeedback" class="text-danger" [class.invisible]="password.valid || password.untouched">Password must have min length 6
+                    </small>
+
+                        <!-- <div class="form-group mb-3">
+                        <input type="password" class="form-control" [(ngModel)]="user.confirm_password" FormControlName="conf" placeholder="Confirm Password" #confirm_password="ngModel" id="confirm_password" name="confirm_password" [class.is-invalid]="
+                        confirm_password.invalid && confirm_password.touched
+                      " required>
+                     </div> -->
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" name="signup" [disabled]="signupform.form.invalid" class="form-control btn btn-primary rounded submit px-3">Sign Up</button>
+                        </div>
+                    </form>
+                    <br>
+                    <p class="text-center">Already a member? <a routerLink="/login">Log In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
