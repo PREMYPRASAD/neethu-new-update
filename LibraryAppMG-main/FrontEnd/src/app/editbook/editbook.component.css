@@ -1,0 +1,41 @@
+.card
+{
+    width: 80%; 
+    margin-left: 155px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+background: #F8F8FC;
+background: -webkit-linear-gradient(top left, #4216021b, #0e050098);
+background: -moz-linear-gradient(top left, #4216021b, #0e05006d);
+background: linear-gradient(to bottom right, #42160263, #0b0b0a71);
+   color: white;
+   border-radius: 16px;
+}
+td
+{
+    font-size: 25px;
+    color: white;
+}
+h1
+{
+   color:rgb(39, 35, 3) ;
+ 
+   text-align: center; 
+   margin-top: 25px;
+   font-size: 40px;
+}
+input
+{
+    background-color: rgb(171, 205, 35);
+    color:blue;
+    border:black;
+    border-radius: 8px;
+   
+}
+input:hover
+{
+    background-color: rgb(255, 237, 97);
+    color:black;
+}
+

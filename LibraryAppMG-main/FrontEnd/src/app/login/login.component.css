@@ -1,0 +1,48 @@
+.container{
+    margin-top: 10%;
+    width: 70%;
+}
+
+.valuebox input[type="text"] {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.card{
+    background-color:  #d0c9c9;
+}
+
+h3{
+    padding-right: 32%;
+    text-align: center;
+    font-size: 60px; 
+}
+
+button
+{ 
+width: 34%;
+background: #49dbe6;
+background: -webkit-linear-gradient(top left, #49dbe6, #27270d);
+background: -moz-linear-gradient(top left, #49dbe6, #27270d);
+background: linear-gradient(to bottom right, #49dbe6, #27270d);
+color:white;
+border: rgb(140, 173, 22) ;
+}
+
+button:hover
+{
+    color: white;
+    background-color: black;
+}
+a
+{
+    color:white;
+}
+a:hover
+{
+    color:black;
+}
+
+.buttonHolder{
+     text-align: center; }

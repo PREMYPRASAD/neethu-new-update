@@ -1,0 +1,57 @@
+
+<section class="ftco-section pt-5 mt-8">
+  <div class="bkgnd" style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <div class="container pt-5 mt-8">
+      <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6 " style="background-color: rgba(104, 46, 5, 0.884) ;">
+                
+                <div class="login-wrap p-4 p-md-5">
+                  <div class="d-flex">
+                      <div class="w-100">
+                          <h3 class="mb-4 text-info" > Login In</h3>
+                      </div>
+                  </div>
+                    <form (ngSubmit)="login()" #loginform="ngForm">
+                      <!-- <div class="form-group mb-3"> -->
+                        <div class="col-md-8 valuebox">
+                         <input type="text" class="form-control"   name="username" placeholder="Username" [(ngModel)]="user.username" #username="ngModel" required>
+                    
+                      <small
+                      for="username"
+                      id="feedback1"
+                      class="text-danger"
+                      [class.invisible]="
+                        username.valid || username.untouched
+                      "
+                      >*username is required
+                    </small>
+                      <div class="form-group mb-3">
+                         <input type="password" class="form-control" FormControlName="password"  name="password" placeholder="Password" [(ngModel)]="user.password" #password="ngModel"  [class.is-invalid]="
+                         password.invalid && password.touched" minlength="6" required>
+                         
+                      </div>
+                      <small
+                  for="pwd"
+                  id="feedback2"
+                  class="text-danger"
+                  [class.invisible]="
+                    password.valid || password.untouched
+                  "
+                  >*Password should be minimum 6 characters
+                </small>
+                        </div>
+                <br>
+                      <div class="form-group">
+                        <div class="buttonHolder">
+                         <button type="submit" name="login" [disabled]="loginform.form.invalid" class="form-control btn btn-primary rounded submit px-3 text-warning">Sign In</button>
+                      </div>
+                    </div>
+                    </form>
+              <br>
+                   <p class="text-center text-info">Not a member? <a routerLink="/signup" class="text-info">Sign Up</a></p>
+               </div>
+            </div>
+         </div>
+        </div>
+      </div>
+</section>

@@ -1,0 +1,44 @@
+<div class="text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+<h1>......Add New Book......</h1>
+<div class='card'>
+    <form (ngSubmit)="AddBook()">
+<!-- <div class='card-header'>
+  New Book
+</div> -->
+<div class='card-body'>            
+  <div class='table-responsive'  style="overflow-x:auto;">
+    <table class='table'>       
+    
+        <tbody>  
+            <tr>
+                <td> <label>Book Name</label></td>
+                <td><input type="text" name="name" [(ngModel)]="bookItem.name" required></td>                  
+            </tr> 
+              <br>  
+              <tr>
+                  <td><label>Author Name</label></td>
+                  <td><input type="text" name="author" [(ngModel)]="bookItem.author" required></td>                  
+                </tr>  
+    <br>
+                    <tr>
+                      <td><label>Description</label></td>
+                      <td><input type="text" name="description" [(ngModel)]="bookItem.description" required></td>                  
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label>Book imageUrl</label></td>
+                        <td><input type="text" name="imageUrl" [(ngModel)]="bookItem.imageUrl" required></td>                  
+                    </tr>  
+                    <br>
+              <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit" /></td>                  
+                          </tr>             
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            </form>
+            </div>   
+          </div>         
+

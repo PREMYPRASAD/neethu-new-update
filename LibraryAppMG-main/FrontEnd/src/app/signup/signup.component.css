@@ -1,0 +1,50 @@
+.container{
+    margin-top: 15%; 
+    width: 50%;
+}
+
+
+section{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+p
+{
+    color: white;  
+}
+button
+{
+    background: #49dbe6;
+background: -webkit-linear-gradient(top left, #49dbe6, #27270d);
+background: -moz-linear-gradient(top left, #49dbe6, #27270d);
+background: linear-gradient(to bottom right, #49dbe6, #27270d);
+color:white;
+border: rgb(140, 173, 22) ;
+}
+button:hover
+{
+    color: white;
+    background-color: black;
+}
+a
+{
+    color:white;
+}
+a:hover
+{
+    color:black;
+}
+.container
+{
+    background: #F8F8FC;
+    background: -webkit-linear-gradient(top left, #4216021b, #0e050098);
+    background: -moz-linear-gradient(top left, #4216021b, #0e05006d);
+    background: linear-gradient(to bottom right, #42160263, #0b0b0a71);
+    border-radius: 16px;
+    width: 800px;
+}
